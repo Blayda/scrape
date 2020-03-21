@@ -1,0 +1,78 @@
+body {
+  background-color: #abffea;
+}
+.container {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+}
+
+#titleDiv {
+  text-align: center;
+  min-height: 150px;
+  background-color: #343a40;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+#articleButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#articles {
+  display: inline-block;
+  overflow: auto;
+  height: 100%;
+}
+
+.card {
+  width: inherit;
+  margin: 1rem;
+}
+
+#fullArticleBtn {
+  float: right;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+textarea,
+input {
+  display: block;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+}
+input {
+  height: 36px;
+  font-size: 24px;
+}
+textarea {
+  height: 200px;
+  font-size: 18px;
+  margin: 5px 0 5px 0;
+}
+
+.articleNoteDiv {
+  margin-top: 10px;
+}
+
+.articleNoteHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteNoteBtn {
+  display: flex;
+  align-self: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 2px 4px 2px 4px;
+}

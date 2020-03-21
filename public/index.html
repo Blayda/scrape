@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>News Scraper</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/bf3fcc460f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="titleDiv">
+          <h1 class="display-3">NPR News Scraper</h1>
+        </div>
+        <!--end of col one div-->
+      </div>
+      <!--end of row  div-->
+
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col" id="articleButtons">
+              <button class="btn btn-dark" id="refresh">
+                <i class="fas fa-sync"></i> Refresh Articles
+              </button>
+              <button class="btn btn-dark" id="clear">
+                <i class="fas fa-times"></i> Clear Articles
+              </button>
+            </div>
+            <!--end of subcol div-->
+          </div>
+          <!--end of subrow div-->
+          <div class="row">
+            <div class="col">
+              <div class="card-deck" id="articles"></div>
+            </div>
+          </div>
+          <!--end of subrow div-->
+        </div>
+        <!--end of col div-->
+
+        <div class="col-6">
+          <div class="row">
+            <div class="col" id="addANote"></div>
+            <!--end of subcol div-->
+          </div>
+          <!--end of subrow div (add a note)-->
+
+          <div class="row">
+            <div class="col" id="existingNotes"></div>
+            <!--end of subcol div-->
+          </div>
+          <!--end of subrow div (existing notes)-->
+        </div>
+        <!--end of col div-->
+      </div>
+      <!--end of row div-->
+    </div>
+    <!--end of container div-->
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!--Custom app JS-->
+    <script src="app.js"></script>
+  </body>
+</html>
