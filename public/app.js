@@ -1,12 +1,10 @@
 var selected;
-//Grab the articles as a JSON
+
 $.getJSON("/articles", data => {
-  //For each article
   for (let i = 0; i < data.length; i++) {
     data[i].imageLink
       ? (image = `<img src='${data[i].imageLink}' class='card-img-top' alt='article-image'></img>`)
       : (image = "");
-    //Display the appropriate information on the page
     $("#articles").append(`
       <div class='card' data-id='${data[i]._id}'>
         ${image}
@@ -24,17 +22,13 @@ const clearAllDivs = () => {
 };
 
 const createNoteInput = input => {
-  //The title of the article
   $("#addANote").append(`<h2 class='display-4'>${input.title}</h2>`);
-  //An input to enter a new note title
   $("#addANote").append(
     `<input id='titleInput' name='title' placeholder:'enter note title'>`
   );
-  //A textarea to add a new note body
   $("#addANote").append(
     `<textarea id='bodyInput' name='body'></textarea placeholder:'enter note text'>`
   );
-  //A button to submit a new note, with the id of the article saved to it
   $("#addANote").append(
     `<button class='btn btn-dark' data-id='${input._id}' id='saveNote'>Save Note</button>`
   );
